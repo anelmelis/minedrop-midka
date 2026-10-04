@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MineDrop - Products</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="poductss.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container header__inner">
+
+        <a class="logo" href="">
+
+            <span class="pixel-cube-logo">
+                M
+            </span>
+
+            <div class="logo-text-group">
+
+                <span class="logo-title">
+                    MINEDROP
+                </span>
+
+                <span class="logo-subtitle">
+                    SHOP STORE
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav" aria-label="Main">
+
+            <a href="../home/main.html">
+                Home
+            </a>
+
+            <a
+                href="../products/products.html"
+                aria-current="page"
+            >
+                Products
+            </a>
+
+            <a href="../saved/saved.html">
+                Saved
+            </a>
+
+            <a href="../booking/booking.html">
+                Booking
+            </a>
+
+            <a href="#">
+                Profile
+            </a>
+
+        </nav>
+
+
+        <a
+            class="login-button"
+            href="../login/log.html"
+        >
+            Log in
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="container products-page">
+
+
+    <!-- CATEGORIES + SEARCH -->
+
+    <section class="tools-section">
+
+        <div class="categories">
+
+            <button
+                class="category-button active-category"
+                data-category="all"
+                type="button"
+            >
+                <span class="category-icon">✨</span>
+                <span>ALL</span>
+            </button>
+
+
+            <button
+                class="category-button"
+                data-category="home"
+                type="button"
+            >
+                <span class="category-icon">🏠</span>
+                <span>HOME & OFFICE</span>
+            </button>
+
+
+            <button
+                class="category-button"
+                data-category="books"
+                type="button"
+            >
+                <span class="category-icon">📚</span>
+                <span>BOOKS</span>
+            </button>
+
+
+            <button
+                class="category-button"
+                data-category="clothes"
+                type="button"
+            >
+                <span class="category-icon">👕</span>
+                <span>CLOTHES</span>
+            </button>
+
+
+            <button
+                class="category-button"
+                data-category="toys"
+                type="button"
+            >
+                <span class="category-icon">🧸</span>
+                <span>TOYS</span>
+            </button>
+
+
+            <button
+                class="category-button"
+                data-category="accessories"
+                type="button"
+            >
+                <span class="category-icon">🎒</span>
+                <span>ACCESSORIES</span>
+            </button>
+
+        </div>
+
+
+        <div class="search-box">
+
+            <span>🔍</span>
+
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="Search products..."
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- PROMO -->
+
+    <section class="promo-section">
+
+        <article class="promo-card">
+
+            <h2>
+                NEW CREEPER COLLECTION
+            </h2>
+
+            <p>
+                Explore our new Creeper-themed products!
+            </p>
+
+            <a href="#products" class="promo-button">
+                EXPLORE
+            </a>
+
+        </article>
+
+
+        <article class="promo-card">
+
+            <h2>
+                COMING SOON...
+            </h2>
+
+            <p>
+                New Clothes Collection. Reserve it before anyone else!
+            </p>
+
+            <a
+                href="../booking/booking.html"
+                class="promo-button"
+            >
+                BOOK NOW
+            </a>
+
+        </article>
+
+
+        <article class="promo-card">
+
+            <h2>
+                SPECIAL OFFER
+            </h2>
+
+            <p>
+                Save more before the offer ends!
+            </p>
+
+            <a href="#products" class="promo-button">
+                SHOP NOW
+            </a>
+
+        </article>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+
+    <section
+        class="products-section"
+        id="products"
+    >
+
+        <div class="products-heading">
+
+            <h1>
+                ALL PRODUCTS
+            </h1>
+
+            <span id="productCount">
+                8 products
+            </span>
+
+        </div>
+
+
+        <div class="row g-4" id="productsGrid">
+
+
+            <!-- ================= PRODUCT 1 ================= -->
+
+            <div
+                class="col-12 col-sm-6 col-lg-3 product-wrapper"
+                data-category="clothes"
+                data-name="Creeper Hoodie"
+            >
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <!-- PHOTO 1 -->
+                        <img
+                            src="../products/imag/hudi.jpg"
+                            alt="Creeper Hoodie"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Creeper Hoodie
+                            </h3>
+
+                            <p>
+                                Minecraft inspired hoodie
+                            </p>
+
+                        </div>
+
+                        <span class="product-price">
+                            $50
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="save-btn"
+                            type="button"
+
+                            data-id="1"
+                            data-name="Creeper Hoodie"
+                            data-description="Minecraft inspired hoodie"
+                            data-price="$50"
+                            data-category="clothes"
+
+                            data-image="../products/imag/hudi.jpg"
+                        >
+                            ♡ SAVE
+                        </button>
+
+
+                        <button
+                            class="details-btn"
+                            type="button"
+
+                            data-name="Creeper Hoodie"
+                            data-description="A comfortable Minecraft inspired hoodie for everyday wear."
+                            data-price="$50"
+                            data-category="Clothes"
+                        >
+                            DETAILS
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 2 ================= -->
+
+            <div
+                class="col-12 col-sm-6 col-lg-3 product-wrapper"
+                data-category="accessories"
+                data-name="MineDrop Backpack"
+            >
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <!-- PHOTO 2 -->
+                        <img
+                            src="../products/imag/sumka.jpg"
+                            alt="MineDrop Backpack"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                MineDrop Backpack
+                            </h3>
+
+                            <p>
+                                Adventure backpack
+                            </p>
+
+                        </div>
+
+                        <span class="product-price">
+                            $35
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="save-btn"
+                            type="button"
+
+                            data-id="2"
+                            data-name="MineDrop Backpack"
+                            data-description="Adventure backpack"
+                            data-price="$35"
+                            data-category="accessories"
+
+                            data-image="../products/imag/sumka.jpg"
+                        >
+                            ♡ SAVE
+                        </button>
+
+
+                        <button
+                            class="details-btn"
+                            type="button"
+
+                            data-name="MineDrop Backpack"
+                            data-description="A practical MineDrop backpack made for everyday adventures."
+                            data-price="$35"
+                            data-category="Accessories"
+                        >
+                            DETAILS
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 3 ================= -->
+
+            <div
+                class="col-12 col-sm-6 col-lg-3 product-wrapper"
+                data-category="clothes"
+                data-name="Creeper T-Shirt"
+            >
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <!-- PHOTO 3 -->
+                        <img
+                            src="../products/imag/ttttt.jpg"
+                            alt="Creeper T-Shirt"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Creeper T-Shirt
+                            </h3>
+
+                            <p>
+                                Comfortable cotton T-shirt
+                            </p>
+
+                        </div>
+
+                        <span class="product-price">
+                            $25
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="save-btn"
+                            type="button"
+
+                            data-id="3"
+                            data-name="Creeper T-Shirt"
+                            data-description="Comfortable cotton T-shirt"
+                            data-price="$25"
+                            data-category="clothes"
+
+                            data-image="../products/imag/ttttt.jpg"
+                        >
+                            ♡ SAVE
+                        </button>
+
+
+                        <button
+                            class="details-btn"
+                            type="button"
+
+                            data-name="Creeper T-Shirt"
+                            data-description="A lightweight cotton T-shirt with a Creeper inspired design."
+                            data-price="$25"
+                            data-category="Clothes"
+                        >
+                            DETAILS
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 4 ================= -->
+
+            <div
+                class="col-12 col-sm-6 col-lg-3 product-wrapper"
+                data-category="books"
+                data-name="Minecraft Book"
+            >
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <!-- PHOTO 4 -->
+                        <img
+                            src="../products/imag/book.jpg"
+                            alt="Minecraft Book"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Minecraft Book
+                            </h3>
+
+                            <p>
+                                Guide for Minecraft fans
+                            </p>
+
+                        </div>
+
+                        <span class="product-price">
+                            $20
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="save-btn"
+                            type="button"
+
+                            data-id="4"
+                            data-name="Minecraft Book"
+                            data-description="Guide for Minecraft fans"
+                            data-price="$20"
+                            data-category="books"
+
+                            data-image="../products/imag/book.jpg"
+                        >
+                            ♡ SAVE
+                        </button>
+
+
+                        <button
+                            class="details-btn"
+                            type="button"
+
+                            data-name="Minecraft Book"
+                            data-description="A useful guide with tips and ideas for Minecraft players."
+                            data-price="$20"
+                            data-category="Books"
+                        >
+                            DETAILS
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 5 ================= -->
+
+            <div
+                class="col-12 col-sm-6 col-lg-3 product-wrapper"
+                data-category="toys"
+                data-name="Creeper Toy"
+            >
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <!-- PHOTO 5 -->
+                        <img
+                            src="../products/imag/toy.jpg"
+                            alt="Creeper Toy"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Creeper Toy
+                            </h3>
+
+                            <p>
+                                Soft collectible toy
+                            </p>
+
+                        </div>
+
+                        <span class="product-price">
+                            $18
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="save-btn"
+                            type="button"
+
+                            data-id="5"
+                            data-name="Creeper Toy"
+                            data-description="Soft collectible toy"
+                            data-price="$18"
+                            data-category="toys"
+
+                            data-image="../products/imag/toy.jpg"
+                        >
+                            ♡ SAVE
+                        </button>
+
+
+                        <button
+                            class="details-btn"
+                            type="button"
+
+                            data-name="Creeper Toy"
+                            data-description="A soft Creeper collectible created for Minecraft fans."
+                            data-price="$18"
+                            data-category="Toys"
+                        >
+                            DETAILS
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 6 ================= -->
+
+            <div
+                class="col-12 col-sm-6 col-lg-3 product-wrapper"
+                data-category="accessories"
+                data-name="MineDrop Cap"
+            >
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <!-- PHOTO 6 -->
+                        <img
+                            src="../products/imag/kepka.jpg"
+                            alt="MineDrop Cap"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                MineDrop Cap
+                            </h3>
+
+                            <p>
+                                Casual gaming cap
+                            </p>
+
+                        </div>
+
+                        <span class="product-price">
+                            $15
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="save-btn"
+                            type="button"
+
+                            data-id="6"
+                            data-name="MineDrop Cap"
+                            data-description="Casual gaming cap"
+                            data-price="$15"
+                            data-category="accessories"
+
+                            data-image="../products/imag/kepka.jpg""
+                        >
+                            ♡ SAVE
+                        </button>
+
+
+                        <button
+                            class="details-btn"
+                            type="button"
+
+                            data-name="MineDrop Cap"
+                            data-description="A casual cap designed for MineDrop and gaming fans."
+                            data-price="$15"
+                            data-category="Accessories"
+                        >
+                            DETAILS
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 7 ================= -->
+
+            <div
+                class="col-12 col-sm-6 col-lg-3 product-wrapper"
+                data-category="home"
+                data-name="Gaming Mug"
+            >
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <!-- PHOTO 7 -->
+                        <img
+                            src="../products/imag/cup.jpg"
+                            alt="Gaming Mug"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Gaming Mug
+                            </h3>
+
+                            <p>
+                                MineDrop ceramic mug
+                            </p>
+
+                        </div>
+
+                        <span class="product-price">
+                            $12
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="save-btn"
+                            type="button"
+
+                            data-id="7"
+                            data-name="Gaming Mug"
+                            data-description="MineDrop ceramic mug"
+                            data-price="$12"
+                            data-category="home"
+
+                            data-image="../products/imag/cup.jpg"
+                        >
+                            ♡ SAVE
+                        </button>
+
+
+                        <button
+                            class="details-btn"
+                            type="button"
+
+                            data-name="Gaming Mug"
+                            data-description="A ceramic MineDrop mug for your gaming desk or home."
+                            data-price="$12"
+                            data-category="Home & Office"
+                        >
+                            DETAILS
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 8 ================= -->
+
+            <div
+                class="col-12 col-sm-6 col-lg-3 product-wrapper"
+                data-category="accessories"
+                data-name="Creeper Keychain"
+            >
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <!-- PHOTO 8 -->
+                        <img
+                            src="../products/imag/brelok.jpg"
+                            alt="Creeper Keychain"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Creeper Keychain
+                            </h3>
+
+                            <p>
+                                Small collectible accessory
+                            </p>
+
+                        </div>
+
+                        <span class="product-price">
+                            $10
+                        </span>
+
+                    </div>
+
+
+                    <div class="product-actions">
+
+                        <button
+                            class="save-btn"
+                            type="button"
+
+                            data-id="8"
+                            data-name="Creeper Keychain"
+                            data-description="Small collectible accessory"
+                            data-price="$10"
+                            data-category="accessories"
+
+                            data-image="../products/imag/brelok.jpg"
+                        >
+                            ♡ SAVE
+                        </button>
+
+
+                        <button
+                            class="details-btn"
+                            type="button"
+
+                            data-name="Creeper Keychain"
+                            data-description="A small Creeper keychain that can be used on keys or bags."
+                            data-price="$10"
+                            data-category="Accessories"
+                        >
+                            DETAILS
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <p
+            id="noProductsMessage"
+            class="text-center mt-4 d-none"
+        >
+            No products found.
+        </p>
+
+    </section>
+
+</main>
+
+
+<!-- DETAILS MODAL -->
+
+<div class="details-overlay" id="detailsOverlay">
+
+    <div class="details-modal">
+
+        <button
+            class="close-modal"
+            id="closeModal"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-content-area">
+
+            <span
+                id="modalCategory"
+                class="modal-category"
+            >
+                Category
+            </span>
+
+            <h2 id="modalName">
+                Product
+            </h2>
+
+            <p id="modalDescription">
+                Description
+            </p>
+
+            <strong id="modalPrice">
+                $0
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <strong>
+                MINEDROP
+            </strong>
+
+            <p>
+                Merch Store
+            </p>
+
+            <p class="footer-copy">
+                © 2026 MINEDROP Shop Store
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                APPAREL
+            </h3>
+
+            <a href="#">Costumes</a>
+            <a href="#">Crewnecks & Hoodies</a>
+            <a href="#">Kids' Apparel</a>
+            <a href="#">Pajamas</a>
+            <a href="#">T-Shirts</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                ACCESSORIES
+            </h3>
+
+            <a href="#">Backpacks & Bags</a>
+            <a href="#">Hats & Beanies</a>
+            <a href="#">Phone Cases</a>
+            <a href="#">Watches</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                HOME & OFFICE
+            </h3>
+
+            <a href="#">Blankets</a>
+            <a href="#">Calendars</a>
+            <a href="#">Candles</a>
+            <a href="#">Drinkware</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                TOYS & BOOKS
+            </h3>
+
+            <a href="#">Books</a>
+            <a href="#">Collectibles</a>
+            <a href="#">Playing Cards</a>
+            <a href="#">Plush</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+<script src="productsss.js"></script>
+
+</body>
+</html>

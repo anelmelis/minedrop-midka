@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MineDrop — Booking</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="home.html">
+        <span class="photo logo__img"><img src="" alt="MineDrop logo"></span>
+        <span>MINEDROP</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="../home/main.html">Home</a>
+        <a href="../products/products.html">Products</a>
+        <a href="../saved/saved.html">Saved</a>
+        <a href="../booking/booking.html" aria-current="page">Booking</a>
+        <a href="#">Profile</a>
+      </nav>
+
+      <a class="btn btn--light btn--pill btn--small" href="../login/log.html">Log in</a>
+    </div>
+  </header>
+
+  <main class="container section">
+
+    <div class="page-title">
+      <h1>MineDrop pre-order portal</h1>
+      <p>Coming out soon</p>
+    </div>
+
+    <div class="carousel">
+      <button class="arrow" id="prev-btn" type="button" aria-label="Previous product">←</button>
+      <div class="carousel__track" id="preorder-track"></div>
+      <button class="arrow" id="next-btn" type="button" aria-label="Next product">→</button>
+    </div>
+
+    <section class="subsection">
+      <h2 class="section-title">Previous collections</h2>
+      <div class="grid-2" id="previous-grid"></div>
+    </section>
+
+    <section class="subsection">
+      <div class="cart">
+        <h2 class="cart__title">Cart:</h2>
+        <ul class="cart__list" id="cart-list"></ul>
+        <div class="cart__summary">
+          <span id="cart-count">0 items</span>
+          <span class="cart__dots" aria-hidden="true"></span>
+          <span class="cart__total" id="cart-total">$0.00</span>
+          <a class="btn btn--primary" id="pay-link" href="../payment/payment.html">Payment</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <strong>MINEDROP</strong>
+        <p>Merch Store</p>
+        <p class="footer__copy">© 2026 MINEDROP Shop Store</p>
+      </div>
+      <div>
+        <h2 class="footer__title">Credits</h2>
+        <ul class="footer__list">
+          <li>Design: Author</li>
+          <li>Code: Author</li>
+          <li>Photos: Author</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__title">Sponsors</h2>
+        <div class="sponsors">
+          <span class="photo"><img src="" alt="Sponsor logo"></span>
+          <span class="photo"><img src="" alt="Sponsor logo"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../booking/booking.js"></script>
+</body>
+</html>

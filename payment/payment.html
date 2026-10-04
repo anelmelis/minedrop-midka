@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MineDrop — Payment</title>
+  <link rel="stylesheet" href="../payment/payment.css">
+</head>
+<body>
+  <main class="checkout">
+
+    <section class="checkout__form">
+      <a class="logo" href="../home/main.html">
+        <span class="photo logo__img"><img src="" alt="MineDrop logo"></span>
+        <span>MINEDROP</span>
+      </a>
+      <a class="checkout__back" href="../booking/booking.html">← Back to Booking</a>
+
+      <h1>Payment method</h1>
+
+      <div class="tabs" id="method-tabs" role="group" aria-label="Payment method">
+        <button class="tab" type="button" data-method="card" aria-pressed="true">Card</button>
+        <button class="tab" type="button" data-method="crypto" aria-pressed="false">Crypto</button>
+        <button class="tab" type="button" data-method="gpay" aria-pressed="false">Google Pay</button>
+      </div>
+
+      <form id="payment-form">
+
+        <div class="panel" data-panel="card">
+          <div class="field">
+            <label for="card-number">Card number</label>
+            <input id="card-number" type="text" inputmode="numeric" placeholder="1234 1234 1234 1234"
+                   autocomplete="cc-number" maxlength="19" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
+          </div>
+          <div class="field">
+            <label for="card-exp">Expiration date</label>
+            <input id="card-exp" type="text" inputmode="numeric" placeholder="MM / YY"
+                   autocomplete="cc-exp" maxlength="7" pattern="(0[1-9]|1[0-2]) / [0-9]{2}" required>
+          </div>
+          <div class="field">
+            <label for="card-cvc">Security code</label>
+            <input id="card-cvc" type="text" inputmode="numeric" placeholder="CVC"
+                   autocomplete="cc-csc" maxlength="4" pattern="[0-9]{3,4}" required>
+          </div>
+        </div>
+
+        <div class="panel" data-panel="crypto" hidden>
+          <div class="field">
+            <label for="coin">Coin</label>
+            <select id="coin" disabled></select>
+          </div>
+          <div class="field">
+            <label for="wallet">Your wallet address</label>
+            <input id="wallet" type="text" placeholder="Wallet address" autocomplete="off" minlength="10" disabled required>
+          </div>
+          <p class="notice" id="coin-note"></p>
+        </div>
+
+        <div class="panel" data-panel="gpay" hidden>
+          <p class="notice">You will confirm the payment in the Google Pay window after you press the button below.</p>
+        </div>
+
+        <div class="field">
+          <label for="pay-email">Email</label>
+          <input id="pay-email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        </div>
+
+        <button class="btn btn--primary" id="submit-btn" type="submit">Pay</button>
+        <p class="small">Demo checkout: no payment is processed and card details are not stored.</p>
+      </form>
+
+      <div class="notice" id="success" hidden></div>
+    </section>
+
+    <aside class="receipt" id="receipt" aria-label="Order receipt"></aside>
+
+  </main>
+
+  <script src="../payment/payment.js"></script>
+</body>
+</html>
