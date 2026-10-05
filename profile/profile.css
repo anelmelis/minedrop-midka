@@ -384,6 +384,117 @@ a {
 }
 
 
+
+.orders-section {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    border: 1px solid var(--line);
+
+    border-radius: var(--radius);
+
+    background: white;
+
+    box-shadow: var(--shadow);
+}
+
+
+.orders-header {
+    margin-bottom: 20px;
+}
+
+
+.orders-header h2 {
+    margin-bottom: 4px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+.orders-header p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+.orders-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+.orders-table th,
+.orders-table td {
+    padding: 14px 12px;
+
+    text-align: left;
+
+    border-bottom: 1px solid var(--line);
+}
+
+
+.orders-table th {
+    color: var(--muted);
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.04em;
+}
+
+
+.orders-table td {
+    font-size: 13px;
+}
+
+
+.orders-table tbody tr:hover {
+    background: var(--bg);
+}
+
+
+.order-status {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.order-status.delivered {
+    background: var(--green-soft);
+
+    color: var(--green);
+}
+
+
+.order-status.shipped {
+    background: #e8efe0;
+
+    color: var(--olive);
+}
+
+
+.order-status.processing {
+    background: #f1eee1;
+
+    color: #7c7040;
+}
+
+
 @media (max-width: 992px) {
 
   .header__inner {
