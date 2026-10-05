@@ -199,18 +199,6 @@ body, html {
   border-radius: 14px;
 }
 
-.pixel-cube-logo {
-  width: 38px;
-  height: 38px;
-  background: var(--green);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 1.2rem;
-}
 
 .logo-title {
   display: block;
@@ -227,6 +215,17 @@ body, html {
   color: var(--muted);
   letter-spacing: 0.1em;
   margin-top: 3px;
+}
+
+.site-logo-img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    flex-shrink: 0;
 }
 
 /* ПРАВАЯ СЕКЦИЯ С ФОТО */

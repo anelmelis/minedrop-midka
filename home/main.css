@@ -53,17 +53,12 @@ a {
   color: #fff;
 }
 
-.pixel-cube-logo {
-  width: 38px;
-  height: 38px;
-  background: var(--green);
+.site-logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #fff;
-  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 .logo-title {

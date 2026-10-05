@@ -49,8 +49,15 @@ h1 { margin: 0; font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.25; }
 .photo { position: relative; overflow: hidden; background: var(--green); }
 .photo img { width: 100%; height: 100%; object-fit: cover; }
 .photo img[src=""], .photo img:not([src]) { display: none; }
-.logo__img { flex: none; width: 42px; height: 42px; border-radius: 50%; }
 
+.logo__img {
+    flex: none;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 8px;
+}
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
 .tab {
   padding: 10px 24px;

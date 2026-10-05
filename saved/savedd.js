@@ -26,6 +26,11 @@ const buyProductName =
 const buyProductPrice =
     document.getElementById("buyProductPrice");
 
+const continueBuyButton =
+    document.querySelector(".continue-buy-button");
+
+let selectedBuyProduct = null;
+
 
 // ========================================
 // GET SAVED PRODUCTS
@@ -169,13 +174,16 @@ function renderSavedProducts() {
                         </button>
 
                         <button
-                            class="buy-btn"
-                            data-name="${product.name}"
-                            data-price="${product.price}"
-                            type="button"
-                        >
-                            BUY NOW
+                         class="buy-btn"
+                         data-id="${product.id}"
+                         data-name="${product.name}"
+                         data-price="${product.price}"
+                         type="button"
+                            >
+                         BUY NOW
                         </button>
+
+                        
 
                     </div>
 
@@ -250,43 +258,47 @@ function addRemoveEvents() {
 // BUY BUTTON
 // ========================================
 
+
 function addBuyEvents() {
 
     const buyButtons =
-        document.querySelectorAll(
-            ".buy-btn"
-        );
+        document.querySelectorAll(".buy-btn");
 
 
-    buyButtons.forEach(
-        button => {
+    buyButtons.forEach(button => {
 
-            button.addEventListener(
-                "click",
-                () => {
+        button.addEventListener("click", () => {
 
-                    buyProductName.textContent =
-                        button.dataset.name;
+            buyProductName.textContent =
+                button.dataset.name;
 
-                    buyProductPrice.textContent =
-                        button.dataset.price;
+            buyProductPrice.textContent =
+                button.dataset.price;
 
 
-                    buyOverlay.classList.add(
-                        "show"
-                    );
+            selectedBuyProduct = {
+                id: button.dataset.id,
+                name: button.dataset.name,
+                price: Number(
+                    button.dataset.price.replace(
+                        /[^0-9.]/g,
+                        ""
+                    )
+                )
+            };
 
 
-                    document.body.style.overflow =
-                        "hidden";
+            buyOverlay.classList.add("show");
 
-                }
-            );
+            document.body.style.overflow =
+                "hidden";
 
-        }
-    );
+        });
+
+    });
 
 }
+
 
 
 // ========================================
@@ -431,5 +443,69 @@ sortSelect.addEventListener(
 // ========================================
 // INITIAL LOAD
 // ========================================
+
+// ========================================
+// ADD SELECTED PRODUCT TO BOOKING CART
+// ========================================
+
+continueBuyButton.addEventListener(
+    "click",
+    () => {
+
+        if (!selectedBuyProduct) {
+            return;
+        }
+
+
+        const CART_KEY = "md_cart";
+
+
+        let cart = [];
+
+        try {
+
+            cart =
+                JSON.parse(
+                    localStorage.getItem(CART_KEY)
+                ) || [];
+
+        } catch (error) {
+
+            cart = [];
+
+        }
+
+
+        const existingProduct =
+            cart.find(
+                item =>
+                    item.id ===
+                    selectedBuyProduct.id
+            );
+
+
+        if (existingProduct) {
+
+            existingProduct.qty += 1;
+
+        } else {
+
+            cart.push({
+                id: selectedBuyProduct.id,
+                name: selectedBuyProduct.name,
+                price: selectedBuyProduct.price,
+                qty: 1
+            });
+
+        }
+
+
+        localStorage.setItem(
+            CART_KEY,
+            JSON.stringify(cart)
+        );
+
+    }
+);
 
 renderSavedProducts();
