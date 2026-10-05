@@ -243,6 +243,33 @@ body, html {
   left: 0;
 }
 
+.mc-logo-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 16px;
+
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+
+  color: var(--dark);
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mc-logo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(40, 54, 24, 0.12);
+}
+
+
 .photo-overlay {
   position: absolute;
   inset: 0;

@@ -161,14 +161,29 @@ h3 {
   color: #fff;
 }
 
+.site-logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
 
-.logo__img {
-    flex: none;
+.logo-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+  line-height: 1;
+}
 
-    width: 42px;
-    height: 42px;
-
-    border-radius: 8px;
+.logo-subtitle {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #D9E2CC;
+  letter-spacing: 0.1em;
 }
 
 
