@@ -55,9 +55,14 @@ h3 {
   outline-offset: 2px;
 }
 
+
+
 .container {
   width: min(1120px, 100% - 32px);
+  max-width: none;
   margin-inline: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .section {
